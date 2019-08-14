@@ -13,5 +13,5 @@ CREATE TABLE ds_users(
     ucard CHAR(18)
 );
 INSERT INTO ds_users VALUES(null,'曹宝利','123456');
-INSERT INTO ds_users VALUES(null,'tiantian','123456');
+INSERT INTO ds_users (phone,upwd)VALUES('15110800953','123456');
 SELECT * FROM ds_users;
