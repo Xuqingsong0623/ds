@@ -71,10 +71,6 @@
   </div> 
   </template>
 <script>
-  var divs = document.getElementById("div");
-  for(let i=0;i<divs.length;i++){
-    
-  }
   export default {
   
     data(){
@@ -172,8 +168,6 @@
   }
   @media (max-width:767px){
       #cc{width:100%}
-  }
-  .cc{
   }
   ul{
       list-style:none;
