@@ -1,0 +1,76 @@
+@media (min-width:992px){
+    #footer #footer-top .footer-item{
+        width:25%;
+    }  
+}
+@media (max-width:992px) and (min-width:768px) {
+    #footer #footer-top .footer-item{
+        width:25%;
+    }
+}
+@media (max-width:768px){
+    #footer #footer-top .footer-item{
+        width:25%;
+    }
+    
+}
+#footer{
+    margin-top: 2em;
+    background-color: #ffffff !important;
+    border-top: 1px solid #EBEBEB !important;
+    color: #484848 !important;
+}
+#footer #footer-distance{
+    margin: 0 64px;
+    padding: 48px 24px;
+    box-sizing: border-box;
+}
+#footer  #footer-distance #footer-top{
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+#footer  #footer-distance #footer-top .footer-item>div{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 2.5em;
+    color: rbg(72,72,72);
+}
+#footer  #footer-distance #footer-top .footer-item .arby{
+    list-style: none;
+    margin-top:16px;
+    text-align: left;
+}
+#footer  #footer-distance #footer-top .footer-item .arby>li>a{
+    margin-top: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3em;
+    color:#767676;
+    text-decoration:none;
+}
+#footer  #footer-distance #footer-bottom{
+    position: relative;
+    border-top: 1px solid #ebebeb;
+    padding:20px 40px;
+    box-sizing: border-box;
+}
+#footer  #footer-distance #footer-bottom .footer-logo{
+    margin-top: 0.7em;
+    float: left;
+    width:21px;height:21px;
+}
+
+#footer  #footer-distance #footer-bottom .footer-cont {
+    position: absolute;
+    margin-left: 1.5em;
+}
+#footer  #footer-distance #footer-bottom .footer-text{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: left;
+    color:#767676;
+}
