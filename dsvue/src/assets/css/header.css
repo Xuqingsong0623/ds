@@ -1,0 +1,204 @@
+.header{
+    overflow: auto;
+}
+.header .bigDiv{
+    width: 100%;
+    /* height */
+    /* display: none; */
+    z-index: 999;
+    position: fixed;
+    /* border: 2px solid #ff0; */
+    top: 80px;
+    color: #000;
+    background: #fff;
+    transition: all 1s;
+}
+.header .bigDiv::after{
+    display: block;
+    clear: both;
+    /* background: pink; */
+    border: 10px solid #f00;
+    content: "";
+}
+.header .bigDiv .shouye.com{
+    border: none;
+}
+.header .bigDiv .com{
+    width: 100%;
+    /* height: 50px; */
+    margin: 30px;
+    padding: 10px;
+    border-top: 1px solid #eee;
+}
+.header .bigDiv .com .linkStyle{
+    display: block;
+    padding: 10px;
+}
+/* 整体头部 */
+.header .nav1{
+    width: 100%;
+    height: 80px;
+    /* height: 180px; */
+    background: pink;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    position: fixed;
+    /* z-index: 999; */
+    color:#fff;
+
+}
+/* logo和名称的div */
+.header .nav1 .left{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    /* padding-left: 50px; */
+}
+.header .nav1 .logoDiv .arrows{
+    /* display: none; */
+}
+/* -------左侧项目logo-------- */
+.header .nav1 .left .logoDiv{
+    padding-left:20px;
+    /* padding-right:20px; */
+    /* width: 50%; */
+    font-size: 30px;
+    display: flex;
+    /* width: 15%; */
+    justify-content: space-around;
+}
+/* 左侧logo */
+/* .nav1 .left .logoDiv{
+} */
+.header .nav1 .left .logoDiv .logo{
+    margin-right: 10px;
+}
+.header .nav1 .left .logoDiv .arrows{
+    display: block;
+    margin-left: 20px;
+    height:12px;
+    width: 12px;
+    margin: 15px 10px 0px 0px;
+    border-right:1px solid #fff;
+    border-bottom:1px solid #fff;
+    border-top:none;
+    border-left:none;
+    transform: rotate(45deg);
+    transition: all .5s;
+    cursor: pointer;
+}
+/* 左侧搜索栏 */
+.header .nav1 .left .searchDiv{
+    width:75%;
+    height: 48px;
+    border-radius: 5px;
+    /* border: 2px solid #f00; */
+    padding-left:12px;
+    background: #fff;
+}
+.header .nav1 .left .searchDiv .searchImg{
+    display: inline-block;
+    width: 4%;
+    margin-top: 14px;
+}
+.header .nav1 .left .searchDiv input{
+    width: 90%;
+    height: 40px;
+    /* padding-top: 10px; */
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+.header .nav1 .daohang{
+   width:  50%;
+   /* padding-left:  */
+}
+.header .nav1 .daohang .more{
+    display: none;
+}
+/* -------右侧导航栏列表-------- */
+/* .nav1 .daohang{ */
+/* } */
+.header .nav1 .daohang .daohangul{
+    list-style: none;
+    /* display: block; */
+    display: flex;
+    justify-content: space-between;
+    padding-left:40px;
+}
+.header .nav1 .daohang .daohangul li{
+    white-space: nowrap;
+    padding: 10px 10px 20px;
+    font-size: 16px;
+    height: 50px;
+}
+.header .nav1 .daohang .daohangul li:hover{
+    border-bottom: 2px solid #fff;
+}
+/* 大屏样式 */
+@media (min-width:992px){
+    .header .nav1 .left{
+        /* width: 100%; */
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+
+}
+/* 中屏样式 */
+@media(min-width:768px) and (max-width:991px){
+    .header .nav1 .daohang{
+        display: none;
+    }
+    .header .nav1 .left{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+}
+/* 小屏样式 */
+@media (max-width:767px){
+    .header .nav1{
+        width: 100%;
+    }
+    .header .nav1 .left{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+    }
+    .header .nav1 .left .logoDiv{
+        width: 20%;
+    }
+    /* .nav1 .left .logoDiv .arrows{
+        display: block;
+        height:12px;
+        width: 12px;
+        margin: 15px 10px 0px 0px;
+        border-right:1px solid #fff;
+        border-bottom:1px solid #fff;
+        border-top:none;
+        border-left:none;
+        transform: rotate(45deg);
+        transition: all .5s;
+        cursor: pointer;
+    } */
+    .header .nav1 .daohang{
+         display: none;
+     }
+    /* .nav1 .daohang{
+        width: 100%;
+        display: flex;
+    }
+    .nav1 .daohang .more{
+        display: block;
+    }
+    .nav1 .daohang .daohangul{
+        display: block;
+        width: 100%;
+        height:0px;
+        overflow: hidden;
+    } */
+}
