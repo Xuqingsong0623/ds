@@ -22,7 +22,5 @@ export default new Router({
     {path: '/carousel',component: Carousel},
     { path:'/Footer',component:Footer},
     { path:'/Index',component:index},
-    {
-      path: '/login_reg',
-      component: Login_Reg
-})
+    {path: '/login_reg',component: Login_Reg}
+  ]})

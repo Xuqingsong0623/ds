@@ -42,7 +42,7 @@
     <div class="bottomDiv">
       <ul class="carousel-indicators">
           <li v-for="(img,idx) of imgs" :key="idx"  @click="moveTo(idx)">
-          <div  :class="idx==i?'active':''"></div>
+          <div  :style="idx==i?tt:''"></div>
           </li>
           
           
@@ -59,6 +59,7 @@ export default {
       innerHeight:window.innerHeight,
       ulClass:{ hasTrans:true },
       i:0,
+      tt:{transition:"",width:""}
       imgs:[
         {
           src:"/images/carousel_item/carouselImg1.jpg",
@@ -96,7 +97,9 @@ export default {
     start(){
       this.timer=setInterval(()=>{
         this.move(1);
-      },6000)
+      },6000);
+      this.tt.transition="width 6s";
+      this.tt.width="60px";
     },
     move(i){
       if(this.canClick){
@@ -254,11 +257,7 @@ export default {
     top:60px;
     float: left;
   }
- .carousel-indicators li div.active{
-    
-    transition: all 7s;
-    width: 60px;
-  }
+
 
   /* .carousel-indicators>li:hover, .carousel-indicators>li.active{
     transform:scale(1.3)
