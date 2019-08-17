@@ -1,28 +1,19 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
+import Header from './components/Header.vue'
+import HeaderDetail from './components/HeaderDetail.vue'
+// import Header1 from './components/Header1.vue'
+import Carousel from './components/Carousel.vue'
+import App from './App.vue'
 
 Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Home
-    },
-    {
-      path: '/login_reg',
-      name: 'login_reg',
-      component: Login_Reg
-    },
-    {
-      path: '/about',
-      name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
-    }
+    {path: '/',component: App},
+    {path: '/header',component: Header},
+    {path: '/headerdetail',component: HeaderDetail},
+    // {path: '/header1',component: Header1},
+    {path: '/carousel',component: Carousel},
   ]
 })
