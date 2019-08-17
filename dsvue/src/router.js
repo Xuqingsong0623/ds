@@ -9,5 +9,9 @@ export default new Router({
   routes: [ 
     { path:'/Footer',component:Footer},
     { path:'/Index',component:index},
+    {
+      path: '/login_reg',
+      component: Login_Reg
+    },
   ]
 })
