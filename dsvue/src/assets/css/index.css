@@ -1,0 +1,205 @@
+@media (min-width:992px){
+    #container{
+        margin:0px 135px 0px 135px;
+        padding:0 24px;
+        max-width: 1080px;
+    }  
+}
+@media (max-width:992px) and (min-width:768px) {
+    #container{
+        padding:0 24px;
+    }
+}
+@media (max-width:768px){
+    #container{
+        padding:0 24px;
+    }
+}
+
+#container .handpick{
+    width:100%;
+    height:100%;
+    position: relative;
+}
+#container .handpick img{
+    width:100%;
+    height:100%;
+}
+#container .handpick .Plus{
+    position: absolute;
+    top:1.5em;
+    width:100%;height:100%;
+}
+#container .handpick .btn button{
+    background: #fff;
+    border:none;
+    margin-top:1em;
+    border-radius: 3px;
+    padding:6px 15px;
+    box-sizing: border-box;
+    width:10em;height:3em;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+#container .handpick .btn .tub{
+    margin-left: -1.5em;
+    border-right: 1px solid rgb(72,72,72);
+    border-bottom: 1px solid rgb(72,72,72);
+    width:10px;height:10px;
+    transform: rotate(-45deg);
+    display: inline-block;
+}
+#house{
+    width:100%;
+}
+#house .housing{
+    display: flex;
+    position: relative;
+    height: 72px;
+    width:100%;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border:1px solid #EBEBEB;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1) !important;
+}
+#house .housing span,button{
+    font-weight:bold;
+    color:#484848;
+    font-size: 16px;
+}
+#house .housing .fang{
+    width:100px;
+    background: #badee4;
+    text-align: center;
+    /* display: table-cell !important; */
+}
+#house .housing .fang .yuan{
+    background: #fff;
+    line-height: 70px;
+    border:none;
+    outline: none;
+    display: table-cell !important;
+    white-space: nowrap;
+}
+#house .housing .house-check{
+    width:100%;
+    position: relative;
+    background: #badee4;
+    /* display: table-cell !important; */
+}
+#house .housing .house-check .city{
+     width:62%;
+     position: relative;
+     display: table-cell !important;
+    
+}
+#house .housing .house-check .city,
+#house .housing .house-check .check-in{
+    border-left: 1px solid #e4e4e4;
+    white-space: nowrap;
+}
+#house .housing .house-check .check-in{
+    border-right: 1px solid #e4e4e4;
+    text-align: left !important;
+}
+#house .housing .house-check .city .dingwei{
+    position: relative;
+}
+#house .housing .house-check .city .dingwei>input{
+    border: none;
+    outline: none;
+    width:90%;
+    vertical-align: middle;
+    margin-left: 0.7em;
+    font-size: 18px;
+    font-weight: bold;
+}
+#house .housing .house-check .city .dingwei>.pic-right,
+#house .housing .house-check .city .dingwei>.pic-left,
+#house .housing .house-check .check-in .check-data>img
+{
+    vertical-align: middle;
+}
+#house .housing .house-check .city .dingwei>.pic-right{
+    position: relative;
+    right: 0;
+    cursor: pointer;
+}
+#house .housing .house-check .check-in{
+    width:30%;
+    position: relative;
+    display: table-cell ;
+    white-space: nowrap;
+    cursor: pointer;
+}
+#house .housing .house-check .check-in .check-data>div{
+    display: inline-block;
+}
+#house .housing .house-check .check-in .check-data .check-lei{
+    margin:0 0.5em;
+}
+#house .housing .house-check .check-in .check-data .check-lei>div{
+    border:1px solid #484848;
+    width:0.7em;
+}
+#house .housing .house-check .search{
+    width:9%;
+    display: table-cell !important;
+    position: relative;
+}
+#house .housing .house-check .search>button{
+    height:48px;
+    border:none;
+    margin:12px 14px;
+    margin-left: 16px !important;
+    padding:0 18px;
+    line-height: 15px;
+    border-radius: 4px;
+    background: #fff;
+    display: inline-block;
+    white-space: nowrap;
+    outline: none;
+    cursor: pointer;
+}
+#house .housing .house-check .cities{
+    width:100%;
+    padding:0 24px; 
+    text-align: left;
+    background: #f5e9a4;
+    box-sizing: border-box;
+}
+#house .housing .house-check .cities .hint{
+    width:100%;
+    padding: 15px;
+    border-bottom: 1px solid #e4e4e4;
+    box-sizing: border-box;
+}
+#house .housing .house-check .cities .hint>span{
+    font-size: 14px;
+    font-weight: bold;
+}
+#house .housing .house-check .cities .hot-city>ul{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+#house .housing .house-check .cities .hot-city>div{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+#house .housing .house-check .cities .hot-city>ul>li{
+    margin:5px 10px;
+    width:70px;
+    height: 30px;
+    text-align: center;
+    padding:0.2em;
+    border-radius: 4px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+#house .housing .house-check .cities .hot-city>ul>li:hover{
+    background: #badee4;
+
+}
