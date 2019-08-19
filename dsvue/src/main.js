@@ -4,9 +4,9 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-import wcSwiper from 'wc-swiper'
-import 'wc-swiper/style.css'
-Vue.use(wcSwiper);
+// import wcSwiper from 'wc-swiper'
+// import 'wc-swiper/style.css'
+// Vue.use(wcSwiper);
 
 
 new Vue({

@@ -7,7 +7,7 @@ import HeaderDetail from './components/HeaderDetail.vue'
 import Carousel from './components/Carousel.vue'
 import App from './App.vue'
 import Footer from './components/Footer.vue'
-import index from './components/Index.vue'
+import Index from './components/Index.vue'
 
 
 Vue.use(Router)
@@ -16,13 +16,11 @@ export default new Router({
 
   routes: [
     {path: '/',component: App},
-    {path: '/header',component: Header},
-    {path: '/headerdetail',component: HeaderDetail},
+    {path: '/Header',component: Header},
+    {path: '/HeaderDetail',component: HeaderDetail},
     // {path: '/header1',component: Header1},
     {path: '/carousel',component: Carousel},
     { path:'/Footer',component:Footer},
-    { path:'/Index',component:index},
-    {
-      path: '/login_reg',
-      component: Login_Reg
+    { path:'/Index',component:Index}
+  ]
 })
