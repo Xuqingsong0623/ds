@@ -59,7 +59,7 @@ export default {
       innerHeight:window.innerHeight,
       ulClass:{ hasTrans:true },
       i:0,
-      tt:{transition:"",width:""}
+      tt:{transition:"",width:""},
       imgs:[
         {
           src:"/images/carousel_item/carouselImg1.jpg",
